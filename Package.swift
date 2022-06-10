@@ -22,6 +22,9 @@ let package = Package(
                 ))),
             ],
             linkerSettings: [
+                .linkedLibrary("sqlite3"),
+                .linkedLibrary("c++"),
+                .linkedLibrary("z"),
                 .linkedLibrary("xml2"),
                 .linkedFramework("StoreKit"),
                 .linkedFramework("Security"),
