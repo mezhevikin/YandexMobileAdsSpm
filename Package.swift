@@ -43,8 +43,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "YandexMobileAds",
-            url: "https://storage.mds.yandex.net/get-ads-mobile-sdk/212922/YandexMobileAds-5.0.2-ios-8197cee1-76ee-4740-a109-74d3f16e1560.zip",
-            checksum: "3b109b709cb29fe0b82a639435da0019a8f3f007e9b3bb3e12a0c637cacff523"
+            url: "https://github.com/mezhevikin/YandexMobileAdsSpm/releases/download/5.0.2/YandexMobileAds.xcframework.zip",
+            checksum: "69e9851204371f98947caf137060e8c31be836b487f414b04c92d11e4e07cdbc"
         )
     ]
 )
