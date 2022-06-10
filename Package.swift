@@ -21,28 +21,6 @@ let package = Package(
                     name: "YandexMobileAds",
                     condition: .when(platforms: .some([.iOS]
                 ))),
-            ],
-            cSettings: [
-                .headerSearchPath("./"),
-                .unsafeFlags(["-ObjC -all_load"])
-            ],
-            linkerSettings: [
-                .linkedLibrary("xml2"),
-                .linkedFramework("StoreKit"),
-                .linkedFramework("Security"),
-                .linkedFramework("SafariServices"),
-                .linkedFramework("SystemConfiguration"),
-                .linkedFramework("UIKit"),
-                .linkedFramework("Foundation"),
-                .linkedFramework("CoreTelephony"),
-                .linkedFramework("CoreLocation"),
-                .linkedFramework("CoreGraphics"),
-                .linkedFramework("AdSupport"),
-                .linkedFramework("WebKit"),
-                .linkedFramework("QuartzCore"),
-                .linkedFramework("AVFoundation"),
-                .linkedFramework("CoreImage"),
-                .linkedFramework("CoreMedia")
             ]
         ),
         .binaryTarget(
