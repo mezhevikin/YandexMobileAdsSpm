@@ -22,6 +22,10 @@ let package = Package(
                     condition: .when(platforms: .some([.iOS]
                 ))),
             ],
+            cSettings: [
+                .headerSearchPath("./"),
+                .unsafeFlags(["-ObjC -all_load"])
+            ],
             linkerSettings: [
                 .linkedLibrary("xml2"),
                 .linkedFramework("StoreKit"),
