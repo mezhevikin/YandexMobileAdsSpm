@@ -40,7 +40,9 @@ let package = Package(
                 .linkedFramework("QuartzCore"),
                 .linkedFramework("AVFoundation"),
                 .linkedFramework("CoreImage"),
-                .linkedFramework("CoreMedia")
+                .linkedFramework("CoreMedia"),
+                .unsafeFlags(["-ObjC"]),
+                .unsafeFlags(["-all_load"]),
             ]
         ),
         .binaryTarget(
